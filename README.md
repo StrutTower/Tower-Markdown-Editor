@@ -4,7 +4,7 @@
 AngularJS directive that add UI options to preview Markdown output and fullscreen the textarea element. 
 Also provides a cheat sheet to help with Markdown syntax.
 
-[Live Demo](https://rawgit.com/StrutTower/Tower-Markdown-Editor/1.0.0/demo/index.html)
+[Live Demo](https://rawgit.com/StrutTower/Tower-Markdown-Editor/1.0.1/demo/index.html)
 
 
 ### Usage

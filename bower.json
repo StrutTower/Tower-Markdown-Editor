@@ -1,5 +1,6 @@
 {
-	"name": "TowerMarkdownEditor",
+  "name": "TowerMarkdownEditor",
+  "version": "1.0.1",
 	"private": true,
   "dependencies": {
     "angular": "^1.5.3",
