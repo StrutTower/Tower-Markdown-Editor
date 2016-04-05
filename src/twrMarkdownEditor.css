@@ -40,7 +40,7 @@ div.twr-markdown-editor {
       left: 0;
       right: 0;
       resize: none;
-      height: calc(100% - 35px); }
+      height: calc(100% - 35px) !important; }
   div.twr-markdown-editor .twr-preview, div.twr-markdown-editor .twr-cheat-sheet {
     position: fixed;
     top: 0;
