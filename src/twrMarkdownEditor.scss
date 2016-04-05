@@ -1,0 +1,94 @@
+﻿div.twr-markdown-editor {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    div.twr-toolbar {
+        background: #111;
+        text-align: right;
+        height:35px;
+
+        button {
+            color: white;
+            background: transparent;
+            border: none;
+            margin:0;
+            height:100%;
+
+            &:hover {
+                background: #333;
+            }
+        }
+    }
+
+    textarea {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        resize: vertical;
+    }
+
+    &.twr-fullscreen {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        div {
+            height: 35px;
+
+            button {
+                height: 100%;
+            }
+        }
+
+        textarea {
+            position: absolute;
+            top: 35px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            resize: none;
+            height:calc(100% - 35px);
+        }
+    }
+
+    .twr-preview, .twr-cheat-sheet {
+        position:fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background:#fff;
+        overflow-y:auto;
+    }
+
+    .twr-preview .twr-toolbar, .twr-cheat-sheet .twr-toolbar{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+
+    .twr-preview .twr-preview-content {
+        padding:10px;
+        max-width:800px;
+        margin:35px auto 5px;
+    }
+
+    .twr-cheat-sheet .twr-cheat-sheet-content {
+        padding:10px;
+        max-width:800px;
+        margin:35px auto 5px;
+        font-family:Consolas, monospace;
+    }
+}
+
+body.twr-markdown-editor-no-scroll {
+    overflow:hidden;
+}

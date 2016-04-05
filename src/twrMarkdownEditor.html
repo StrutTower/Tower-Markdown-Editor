@@ -1,0 +1,91 @@
+<div class="twr-markdown-editor">
+    <div class="twr-toolbar">
+        <button type="button" data-ng-click="showCheatSheet()">Cheat Sheet</button>
+        <button type="button" data-ng-click="showPreview()" data-ng-hide="hidePreviewButton">Preview</button>
+        <button type="button" data-ng-click="fullscreen()">{{fullscreenLabel}}</button>
+    </div>
+
+    <textarea data-ng-model="content"></textarea>
+
+
+    <div class="twr-preview" data-ng-if="previewOpen">
+        <div class="twr-toolbar">
+            <button type="button" data-ng-click="closePreview()">Close Preview</button>
+        </div>
+        <div data-ng-bind-html="previewHtml" class="markdown twr-preview-content"></div>
+    </div>
+
+
+    <div class="twr-cheat-sheet" data-ng-if="cheatSheetOpen">
+        <div class="twr-toolbar">
+            <button type="button" data-ng-click="closeCheatSheet()">Close Cheat Sheet</button>
+        </div>
+        <div class="twr-cheat-sheet-content">
+            <h4>Headings</h4>
+            <p>
+                <div># This is a h1 heading</div>
+                <div>## This is a h2 heading</div>
+                <div>### This is a h3 heading</div>
+                <div>#### This is a h4 heading</div>
+                <div>##### This is a h5 heading</div>
+                <div>###### This is a h6 heading</div>
+            </p>
+
+            <hr />
+
+            <h4>Font Styles</h4>
+            <p>
+                <div>* This is italic text *</div>
+                <div>** This is bold text **</div>
+                <div>** This is bold and _italic_ text **</div>
+                <div>This a ~~strikethrough~~ element - <i>This element is disabled by default</i></div>
+            </p>
+
+            <hr />
+
+            <h4>Lists</h4>
+            <p>
+                <div>* Unordered List Item 1</div>
+                <div>* Unordered List Item 2</div>
+                <div>&nbsp;&nbsp;* Unordered Sublist Item 1</div>
+                <div>&nbsp;&nbsp;* Unordered Sublist Item 2</div>
+                <div>* Unordered List Item 3</div>
+            </p>
+            <p>
+                <div>1. Ordered List Item 1</div>
+                <div>2. Ordered List Item 2</div>
+                <div>3. Ordered List Item 3</div>
+            </p>
+
+            <hr />
+
+            <h4>Code</h4>
+            <p>
+                Inline `code` using single backticks
+            </p>
+            <p>
+                <div>```</div>
+                <div>Code block</div>
+                <div>Second line of a code block</div>
+                <div>```</div>
+            </p>
+            <p>
+                <div>```c-sharp</div>
+                <div>Adding text right after the backticks add a class to the code block for PrismJS highlighting</div>
+                <div>```</div>
+            </p>
+
+            <hr />
+
+            <h4>Blockquote</h4>
+            <p>
+                <div>> This is a blockquote</div>
+                <div>></div>
+                <div>> This is the second line of a blockqoute</div>
+            </p>
+
+            <hr />
+
+        </div>
+    </div>
+</div>

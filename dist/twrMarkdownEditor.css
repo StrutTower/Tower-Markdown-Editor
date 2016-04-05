@@ -1,0 +1,68 @@
+div.twr-markdown-editor {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  div.twr-markdown-editor div.twr-toolbar {
+    background: #111;
+    text-align: right;
+    height: 35px; }
+    div.twr-markdown-editor div.twr-toolbar button {
+      color: white;
+      background: transparent;
+      border: none;
+      margin: 0;
+      height: 100%; }
+      div.twr-markdown-editor div.twr-toolbar button:hover {
+        background: #333; }
+  div.twr-markdown-editor textarea {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    resize: vertical; }
+  div.twr-markdown-editor.twr-fullscreen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    div.twr-markdown-editor.twr-fullscreen div {
+      height: 35px; }
+      div.twr-markdown-editor.twr-fullscreen div button {
+        height: 100%; }
+    div.twr-markdown-editor.twr-fullscreen textarea {
+      position: absolute;
+      top: 35px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      resize: none;
+      height: calc(100% - 35px); }
+  div.twr-markdown-editor .twr-preview, div.twr-markdown-editor .twr-cheat-sheet {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    overflow-y: auto; }
+  div.twr-markdown-editor .twr-preview .twr-toolbar, div.twr-markdown-editor .twr-cheat-sheet .twr-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; }
+  div.twr-markdown-editor .twr-preview .twr-preview-content {
+    padding: 10px;
+    max-width: 800px;
+    margin: 35px auto 5px; }
+  div.twr-markdown-editor .twr-cheat-sheet .twr-cheat-sheet-content {
+    padding: 10px;
+    max-width: 800px;
+    margin: 35px auto 5px;
+    font-family: Consolas, monospace; }
+
+body.twr-markdown-editor-no-scroll {
+  overflow: hidden; }

@@ -1,0 +1,9 @@
+{
+	"name": "TowerMarkdownEditor",
+	"private": true,
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-sanitize": "^1.5.3",
+    "showdown": "^1.3.0"
+  }
+}

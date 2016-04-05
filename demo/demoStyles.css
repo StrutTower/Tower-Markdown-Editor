@@ -1,0 +1,67 @@
+﻿html {margin:0; padding:0;}
+
+body {
+    max-width:800px;
+    margin: 0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-center {
+    text-align:center;
+}
+
+pre {
+    max-width: 100%;
+    overflow-x:auto;
+    background:#f1f1f1;
+    border:1px solid rgb(221, 221, 221);
+    border-radius:5px;
+    padding:10px;
+}
+
+.markdown {
+    background: #fff;
+    font-size: 16px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+    .markdown table {
+        border-collapse:collapse;
+        width:100%;
+    }
+
+        .markdown table th, table td {
+            padding:3px 6px;
+            border: 1px solid #ccc;
+        }
+
+    .markdown :not(pre) code {
+        display:inline-block;
+        background:rgba(0, 0, 0, 0.08);
+        padding:0.2em;
+        font-size: 85%;
+        margin:0;
+        border-radius: 3px;
+        font-family:Consolas, monospace;
+    }
+
+    .markdown pre {
+        background: #f1f1f1;  
+    }
+
+    .markdown pre code {
+        display: block;
+        -ms-word-wrap: normal;
+        word-wrap: normal;
+        padding: 16px;
+        font-family:Consolas, monospace;
+    }
+
+    .markdown blockquote {
+        margin: 10px;
+        background:#e4e4e4;
+        padding:5px 20px;
+        border-radius: 5px;
+    }
+
